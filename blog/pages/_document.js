@@ -8,14 +8,14 @@ class MyDocument extends Document {
 
   render() {
     const meta = {
-      title: 'Next.js Blog Starter Kit',
-      description: 'Clone and deploy your own Next.js portfolio in minutes.',
+      title: 'Mikihiro Saito Blog',
+      description: 'フィリピン在住エンジニアのブログ',
       image:
         'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png'
     }
 
     return (
-      <Html lang="en">
+      <Html lang="ja">
         <Head>
           <meta name="robots" content="follow, index" />
           <meta name="description" content={meta.description} />
@@ -28,6 +28,11 @@ class MyDocument extends Document {
           <meta name="twitter:title" content={meta.title} />
           <meta name="twitter:description" content={meta.description} />
           <meta name="twitter:image" content={meta.image} />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={true} />
+              <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap"
+                    rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet" />
         </Head>
         <body>
           <Main />
