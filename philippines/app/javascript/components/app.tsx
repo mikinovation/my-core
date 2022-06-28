@@ -1,11 +1,6 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+const container = document.getElementById('app');
+const root = createRoot(container);
 
-const App = () => {
-    return <div>Hello, Rails 7!</div>;
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-    const rootEl = document.getElementById("clock");
-    ReactDOM.render(<App />, rootEl);
-});
+root.render(<div>Hello, Rails 7!</div>);

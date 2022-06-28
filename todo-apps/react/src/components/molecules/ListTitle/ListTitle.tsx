@@ -2,6 +2,7 @@ import { Textbox } from "@/components/atoms/Textbox";
 import clsx from "clsx";
 import { ComponentPropsWithoutRef, ComponentPropsWithRef, useId } from "react";
 import styles from "./styles.module.css";
+import {Button} from "@/components/atoms/Button";
 
 type Props = {
     className?: string;
@@ -16,6 +17,7 @@ export const ListTitle = ({
                                      className,
                                      titleLevel = 3,
                                      labelProps: { children, ...labelProps },
+                                     buttonProps: { children, ...buttonProps },
                                      textboxProps,
                                      description,
                                      error,
@@ -25,9 +27,6 @@ export const ListTitle = ({
     return (
         <div className={clsx(className, styles.module)}>
             <label {...labelProps}>
-        <span role="heading" aria-level={titleLevel} className={styles.title}>
-          {children}
-        </span>
                 <Textbox
                     {...textboxProps}
                     className={clsx(textboxProps?.className, styles.textbox)}
@@ -48,6 +47,7 @@ export const ListTitle = ({
                     </p>
                 )}
             </div>
+            <Button onClick={}>リストを追加</Button>
         </div>
     );
 };

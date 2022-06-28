@@ -36,6 +36,7 @@ export const TodoList = ({ initialValues, onValid }: Props) => {
                 <ListTitle
                     className={styles.textbox}
                     labelProps={{ children: "リストのタイトルを追加" }}
+                    buttonProps={{ children: "リストを追加", onClick: () => {} }}
                     textboxProps={{
                         ...register("name"),
                         placeholder: "TODO",
