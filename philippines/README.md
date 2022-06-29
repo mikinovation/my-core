@@ -32,12 +32,6 @@ bundle exec rails db:migrate:reset
 bundle exec rails db:seed_fu
 ```
 
-## フロントエンドの開発環境起ち上げ
-
-```shell
-yarn build --watch
-```
-
 ## テスト
 
 ```shell
@@ -53,4 +47,10 @@ rubocop
 
 ```shell
 bundle exec rubocop -A
+```
+
+## storybook
+
+```shell
+yarn storybook
 ```
