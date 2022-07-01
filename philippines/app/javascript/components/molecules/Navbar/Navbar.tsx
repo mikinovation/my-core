@@ -10,10 +10,10 @@ const classNames = (...classes) => {
 export const Navbar = () => {
     const { t } = useTranslation();
     const navigation = [
-        { name: t('navigation.dashboard'), href: '#', current: true },
-        { name: t('navigation.team'), href: '#', current: false },
-        { name: t('navigation.projects'), href: '#', current: false },
-        { name: t('navigation.calendar'), href: '#', current: false },
+        { name: t('navigation.search_teachers'), href: '#', current: true },
+        { name: t('navigation.become_teacher'), href: '#', current: false },
+        { name: t('navigation.help'), href: '#', current: false },
+        { name: t('navigation.signin'), href: '#', current: false },
     ]
     return (
         <Disclosure as="nav" className="bg-gray-800">

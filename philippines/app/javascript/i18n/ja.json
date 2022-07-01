@@ -1,8 +1,8 @@
 {
   "navigation": {
-    "dashboard": "ダッシュボード",
-    "team": "チーム",
-    "projects": "プロジェクト",
-    "calendar": "カレンダー"
+    "search_teachers": "ダッシュボード",
+    "become_teacher": "チーム",
+    "help": "ヘルプ",
+    "signin": "ログイン"
   }
 }
