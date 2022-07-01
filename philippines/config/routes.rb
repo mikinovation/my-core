@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-  get 'components/index'
   root 'components#index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'components/index'
+  get "/login", to: "login#index"
 end
