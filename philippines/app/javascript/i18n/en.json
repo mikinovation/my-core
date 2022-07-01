@@ -1,0 +1,8 @@
+{
+  "navigation": {
+    "dashboard": "Dashboard",
+    "team": "Team",
+    "projects": "Projects",
+    "calendar": "Calendar"
+  }
+}

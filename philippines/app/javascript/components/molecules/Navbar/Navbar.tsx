@@ -1,19 +1,20 @@
 import  React, { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-
-const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
-]
+import {useTranslation} from "react-i18next";
 
 const classNames = (...classes) => {
     return classes.filter(Boolean).join(' ')
 }
 
 export const Navbar = () => {
+    const { t } = useTranslation();
+    const navigation = [
+        { name: t('navigation.dashboard'), href: '#', current: true },
+        { name: t('navigation.team'), href: '#', current: false },
+        { name: t('navigation.projects'), href: '#', current: false },
+        { name: t('navigation.calendar'), href: '#', current: false },
+    ]
     return (
         <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
