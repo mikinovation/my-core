@@ -4,5 +4,11 @@
     "become_teacher": "Become a Teacher",
     "help": "Help",
     "signin": "Login"
+  },
+  "features": {
+    "native_teachers": "Native Teachers",
+    "philippines": "This services is specified in Philippines",
+    "anytime": "好きな時間に学習できる",
+    "level": "レベルにあった学習"
   }
 }

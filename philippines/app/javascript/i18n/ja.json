@@ -4,5 +4,14 @@
     "become_teacher": "チーム",
     "help": "ヘルプ",
     "signin": "ログイン"
+  },
+  "features": {
+    "native_teachers": {
+      "title": "ネイティブ講師",
+      "description": "フィリピンの現地講師から直接学ぶことができます"
+    },
+    "philippines": "フィリピンの言語に特化したサービス",
+    "anytime": "好きな時間に学習できる",
+    "level": "レベルにあった学習"
   }
 }

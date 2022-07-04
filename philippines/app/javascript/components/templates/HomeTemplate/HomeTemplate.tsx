@@ -1,21 +1,14 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import {HomeHeader} from "../../organisms/HomeHeader";
+import {HomeFeatures} from "../../organisms/HomeFeatures";
+import {HomeAdvantages} from "../../organisms/HomeAdvantage";
 
 export const HomeTemplate = () => {
     return (
-        <main className="container mx-auto mt-28 px-5 flex">
-            <div>
-                <h1>Bookkeeper</h1>
-                <nav
-                    style={{
-                        borderBottom: "solid 1px",
-                        paddingBottom: "1rem",
-                    }}
-                >
-                    <Link to="/">home</Link> |{" "}
-                    <Link to="/login">login</Link>
-                </nav>
-            </div>
+        <main className="container mx-auto mt-28 px-5">
+            <HomeHeader />
+            <HomeFeatures />
+            <HomeAdvantages />
         </main>
     )
 }
