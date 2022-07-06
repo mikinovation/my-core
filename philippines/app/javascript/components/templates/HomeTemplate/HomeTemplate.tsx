@@ -2,6 +2,7 @@ import React from 'react';
 import {HomeHeader} from "../../organisms/HomeHeader";
 import {HomeFeatures} from "../../organisms/HomeFeatures";
 import {HomeAdvantages} from "../../organisms/HomeAdvantage";
+import {HomeSteps} from "../../organisms/HomeSteps";
 
 export const HomeTemplate = () => {
     return (
@@ -9,6 +10,7 @@ export const HomeTemplate = () => {
             <HomeHeader />
             <HomeFeatures />
             <HomeAdvantages />
+            <HomeSteps />
         </main>
     )
 }

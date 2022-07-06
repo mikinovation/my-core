@@ -6,9 +6,48 @@
     "signin": "Login"
   },
   "features": {
-    "native_teachers": "Native Teachers",
-    "philippines": "This services is specified in Philippines",
-    "anytime": "好きな時間に学習できる",
-    "level": "レベルにあった学習"
+    "title": "Features",
+    "native_teachers": {
+      "title": "Native Teachers",
+      "description": "Learn directly from local teachers in the Philippines"
+    },
+    "philippines": {
+      "title": "Specified in Philippines Languages",
+      "description": "We are specified in learning the Philippine language"
+    },
+    "anytime": {
+      "title": "Learn Anytime",
+      "description": "You can coordinate your time with the instructor"
+    },
+    "level": {
+      "title": "Level Appropriate",
+      "description": "You can take lessons at a level appropriate for the learner in consultation with the teacher"
+    }
+  },
+  "advantages": {
+    "title": "Advantages",
+    "culture": {
+      "title": "Learn about Philippine Culture",
+      "description": "Learning a language means learning a culture. By learning as much as you can, you can experience the Filipino culture!"
+    },
+    "practice": {
+      "title": "Learn practical conversational skills",
+      "description": "We can provide practical lessons that can be used immediately in the various situations"
+    },
+    "anytime": {
+      "title": "Talk to a teacher anytime",
+      "description": "If you have any questions, you can ask your teacher. Questions are a shortcut to your growing!"
+    },
+    "trust": {
+      "title": "Gain trust in the Philippines",
+      "description": "Communicate smoothly with Filipinos"
+    }
+  },
+  "steps": {
+    "title": "Easy Steps",
+    "step1": "Search a teacher",
+    "step2": "Book a Lesson",
+    "step3": "Take a Lesson",
+    "step4": "Review"
   }
 }

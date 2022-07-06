@@ -1,8 +1,8 @@
 import React from 'react';
-import {HomeTemplate} from "../components/templates/HomeTemplate/index.tsx";
+import { HomeTemplate } from '../components/templates/HomeTemplate/index.tsx';
 
-export const Home = () => {
-    return (
-        <HomeTemplate />
-    )
+export function Home() {
+  return (
+    <HomeTemplate />
+  );
 }
