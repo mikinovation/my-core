@@ -2,7 +2,7 @@
   "name": "app",
   "private": "true",
   "scripts": {
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
+    "build": "node esbuild.config.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint ./app/javascript/**/*.ts ./app/javascript/**/*.tsx --fix"
@@ -32,6 +32,8 @@
     "@typescript-eslint/eslint-plugin": "^5.30.4",
     "@typescript-eslint/parser": "^5.30.4",
     "babel-loader": "^8.2.5",
+    "css-tree": "^2.1.0",
+    "esbuild-css-modules-plugin": "^2.3.2",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.3",
