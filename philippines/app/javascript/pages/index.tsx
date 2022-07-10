@@ -1,8 +1,8 @@
-import React from 'react';
-import { HomeTemplate } from '../components/templates/HomeTemplate/index.tsx';
+import React, { FC, memo } from 'react';
+import HomeTemplate from '../components/templates/HomeTemplate';
 
-export function Home() {
-  return (
-    <HomeTemplate />
-  );
-}
+const HomePage: FC = memo(() => (
+  <HomeTemplate />
+));
+
+export default HomePage;

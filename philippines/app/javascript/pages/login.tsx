@@ -1,8 +1,10 @@
-import React from 'react';
-import { LoginTemplate } from '../components/templates/LoginTemplate';
+import React, { FC } from 'react';
+import LoginTemplate from '../components/templates/LoginTemplate';
 
-export function Login() {
+const LoginPage: FC = function Login() {
   return (
     <LoginTemplate />
   );
-}
+};
+
+export default LoginPage;

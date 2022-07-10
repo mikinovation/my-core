@@ -1,2 +1,2 @@
-import "@hotwired/turbo-rails";
-import "./main";
+import '@hotwired/turbo-rails';
+import './main';

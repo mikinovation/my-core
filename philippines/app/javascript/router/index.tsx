@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { BasicLayout } from '../components/layouts/BasicLayout';
-import { Home } from '../pages';
-import { Login } from '../pages/login';
+import BasicLayout from '../components/layouts/BasicLayout';
+import HomePage from '../pages';
+import LoginPage from '../pages/login';
 
-export function Router() {
+export default function Router() {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<BasicLayout />}>
-          <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
+          <Route index element={<HomePage />} />
+          <Route path="login" element={<LoginPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
