@@ -1,6 +1,5 @@
 import React, { ComponentPropsWithoutRef, forwardRef } from 'react';
 import clsx from 'clsx';
-import styles from './styles.module.css';
 
 const Textbox = forwardRef<
     HTMLInputElement,
@@ -8,10 +7,10 @@ const Textbox = forwardRef<
     >(({ className, ...props }, ref) => (
       <input
         type="text"
-/* eslint-disable-next-line react/jsx-props-no-spreading */
+        /* eslint-disable-next-line react/jsx-props-no-spreading */
         {...props}
         ref={ref}
-        className={clsx(className, styles.textbox)}
+        className={clsx(className, 'shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker')}
       />
     ));
 
