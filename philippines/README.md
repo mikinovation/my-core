@@ -11,7 +11,10 @@ docker compose up
 
 ```shell
 docker compose exec web /bin/sh
+docker compose exec db mysql -u root -p app_development
 ```
+
+開発環境用のmysqlのパスワード「password」
 
 ## packageのインストール
 

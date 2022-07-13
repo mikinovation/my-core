@@ -1,5 +1,7 @@
 file_names = [
   'users.rb',
+  'languages.rb',
+  'teacher_languages.rb'
 ]
 
 dir = Rails.root.join('db', 'fixtures', 'development', 'seeds')
