@@ -3,6 +3,7 @@
 # Table name: teacher_languages
 #
 #  id          :bigint           not null, primary key
+#  skill       :integer          default("beginner")
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  language_id :bigint
@@ -21,4 +22,8 @@
 class TeacherLanguage < ApplicationRecord
   belongs_to :user
   belongs_to :language
+
+  enum skill: [ :beginner, :intermediate, :advanced, :native ]
+
+  validates :skill, inclusion: { in: skills.keys }
 end

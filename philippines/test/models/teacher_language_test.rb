@@ -3,6 +3,7 @@
 # Table name: teacher_languages
 #
 #  id          :bigint           not null, primary key
+#  skill       :integer          default("beginner")
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  language_id :bigint

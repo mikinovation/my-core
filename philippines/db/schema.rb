@@ -20,6 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_124430) do
   create_table "teacher_languages", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "language_id"
+    t.integer "skill", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["language_id"], name: "index_teacher_languages_on_language_id"
@@ -33,6 +34,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_11_124430) do
     t.integer "role", default: 1, null: false
     t.string "first_name", default: "", null: false
     t.string "last_name", default: "", null: false
+    t.string "country", default: "", null: false
+    t.string "short_introduction", default: "", null: false
+    t.string "introduction", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
