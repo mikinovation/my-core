@@ -35,13 +35,23 @@ bundle exec rails db:migrate:reset
 bundle exec rails db:seed_fu
 ```
 
+## ブラウザを開く
+
+http://localhost
+
+## ER図の作成
+
+```shell
+bundle exec rails erd
+```
+
 ## テスト
 
 ```shell
 bundle exec rspec
 # ディレクトリやファイルを絞り込みたい場合
-bundle exec rspec spec/graphql
-bundle exec rspec spec/graphql/types/object_types/user_type_spec.rb
+bundle exec rspec spec/models
+bundle exec rspec spec/models/user_spec.rb
 ```
 
 ## コードフォーマット

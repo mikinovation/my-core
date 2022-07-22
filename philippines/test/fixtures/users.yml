@@ -7,14 +7,14 @@
 #  email                  :string(255)      default(""), not null
 #  encrypted_password     :string(255)      default(""), not null
 #  first_name             :string(255)      default(""), not null
-#  introduction           :string(255)      default(""), not null
+#  introduction           :string(255)      default("")
 #  last_name              :string(255)      default(""), not null
 #  name                   :string(255)      default(""), not null
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
 #  reset_password_token   :string(255)
-#  role                   :integer          default(1), not null
-#  short_introduction     :string(255)      default(""), not null
+#  role                   :integer          not null
+#  short_introduction     :string(255)      default("")
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
