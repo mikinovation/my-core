@@ -3,7 +3,7 @@ class CreateChats < ActiveRecord::Migration[7.0]
     create_table :chats do |t|
       t.references  :chat_room,  index: true, foreign_key: true
       t.references  :user,  index: true, foreign_key: true
-      # t.text :message, null: false, default: ""
+      t.text :message, null: false
       t.timestamps
     end
   end

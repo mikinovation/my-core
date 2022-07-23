@@ -8,6 +8,6 @@
 #  updated_at :datetime         not null
 #
 class Language < ApplicationRecord
-  has_many :users, through: :teacher_languages
   has_many :teacher_languages
+  has_many :users, through: :teacher_languages
 end

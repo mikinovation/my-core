@@ -17,4 +17,5 @@
 #  fk_rails_...  (user_id => users.id)
 #
 class Evaluation < ApplicationRecord
+  belongs_to :user
 end

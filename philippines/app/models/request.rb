@@ -19,4 +19,6 @@
 #  fk_rails_...  (teacher_id => users.id)
 #
 class Request < ApplicationRecord
+  belongs_to :student, class_name: 'User'
+  belongs_to :teacher, class_name: 'User'
 end

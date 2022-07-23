@@ -8,12 +8,13 @@
 #  encrypted_password     :string(255)      default(""), not null
 #  first_name             :string(255)      default(""), not null
 #  introduction           :string(255)      default("")
+#  is_student             :boolean          default(FALSE), not null
+#  is_teacher             :boolean          default(FALSE), not null
 #  last_name              :string(255)      default(""), not null
 #  name                   :string(255)      default(""), not null
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
 #  reset_password_token   :string(255)
-#  role                   :integer          not null
 #  short_introduction     :string(255)      default("")
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
@@ -29,10 +30,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :languages, through: :teacher_languages
   has_many :teacher_languages
-
-  enum role: [ :admin, :teacher, :student ]
+  has_many :languages, through: :teacher_languages
+  has_many :chat_rooms
+  has_many :requests
 
   MINIMUM_PASSWORD_LENGTH = 8
 
