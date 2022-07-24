@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_23_113814) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_23_143724) do
   create_table "admins", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -41,6 +41,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_23_113814) do
     t.datetime "updated_at", null: false
     t.index ["chat_room_id"], name: "index_chats_on_chat_room_id"
     t.index ["user_id"], name: "index_chats_on_user_id"
+  end
+
+  create_table "contracts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "student_id", null: false
+    t.bigint "teacher_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["student_id"], name: "fk_rails_46fbd63cd3"
+    t.index ["teacher_id"], name: "fk_rails_b8a6e77614"
   end
 
   create_table "courses", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -111,6 +120,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_23_113814) do
   add_foreign_key "chat_rooms", "users", column: "teacher_id"
   add_foreign_key "chats", "chat_rooms"
   add_foreign_key "chats", "users"
+  add_foreign_key "contracts", "users", column: "student_id"
+  add_foreign_key "contracts", "users", column: "teacher_id"
   add_foreign_key "courses", "languages"
   add_foreign_key "courses", "users"
   add_foreign_key "evaluations", "users"

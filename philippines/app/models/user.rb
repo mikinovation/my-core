@@ -34,6 +34,7 @@ class User < ApplicationRecord
   has_many :languages, through: :teacher_languages
   has_many :chat_rooms
   has_many :requests
+  has_many :contracts
 
   MINIMUM_PASSWORD_LENGTH = 8
 
