@@ -1,0 +1,18 @@
+version: '3.6'
+services:
+  mysql:
+    image: mysql:8.0
+    ports:
+      - '3306:3306'
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: todo
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      TZ: Asia/Tokyo
+volumes:
+  db_data:
